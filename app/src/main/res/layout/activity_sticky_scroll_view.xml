@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.xuhuawei.stickydemo.view.ObservableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".sticky.StickyScrollViewActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:gravity="center"
+                android:text="Header"
+                android:textSize="18sp" />
+            <include
+                android:id="@+id/layout_sticky_list_bar"
+                layout="@layout/layout_sticky_list_bar" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="A" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="B" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="C" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="D" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="E" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="F" />
+
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="G" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="H" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="I" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="J" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="K" />
+
+            <TextView
+                style="@style/text_scroll_style"
+                android:text="L" />
+
+
+        </LinearLayout>
+    </com.xuhuawei.stickydemo.view.ObservableScrollView>
+<!--这个是为了伪造显示的stickview-->
+    <include
+        android:visibility="gone"
+        android:id="@+id/layout_sticky_list_fake_bar"
+        layout="@layout/layout_sticky_list_bar" />
+</RelativeLayout>
